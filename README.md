@@ -17,6 +17,22 @@ This is a Flutter project developed to track the stats of the Novel Covid-19 vir
 
 <img src="https://github.com/afrozshaikh25/ncovid19/blob/master/sc01.png" alt="s1" width="700">
 
+# 💻Installation
+
+<ul>
+  <li>Download this repo</li>
+  <li>Extract the files onto your PC</li>
+  <li>Open this Folders using Android Studio or Visual Code</li>
+  <li>Open Pubspec.yaml File and 
+  ```dart
+    Flutter upgrade
+  </li>
+  <li>Then run 
+  ```dart
+    Flutter run
+  </li>
+</ul>
+
 # Api References
 https://corona.lmao.ninja
 
