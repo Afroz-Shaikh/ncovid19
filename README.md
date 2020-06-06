@@ -37,6 +37,7 @@ flutter doctor
 ```dart
 flutter run
 ```
+7) Thats it!! 
 
 # Api References
 https://corona.lmao.ninja
@@ -45,4 +46,6 @@ https://corona.lmao.ninja
 <a href="https://github.com/afrozshaikh25/ncovid19/blob/master/LICENSE">Apache License 2.0</a>
 
 
-<b>STAY SAFE. STAY HOME</b>❤️
+<b>STAY SAFE. STAY HOME</b>
+Star this Repo and show some ❤️ & Support
+### Gracias Amigo
