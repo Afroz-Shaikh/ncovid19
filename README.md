@@ -19,3 +19,5 @@ A Covid-19 Tracker that tracks the number of cases, deaths and recoveries by usi
 # Api References
 https://corona.lmao.ninja
 
+# Licence
+<a href="https://github.com/afrozshaikh25/ncovid19/blob/master/LICENSE">Apache License 2.0</a>
