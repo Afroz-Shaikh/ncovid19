@@ -1,21 +1,21 @@
-<<<<<<< HEAD
-# covidtrack
+# ncovid tracker
 
-A new Flutter application.
+A Covid-19 Tracker that tracks the number of cases, deaths and recoveries by using a API. This app is built completely using Flutter Sdk and Dart.
 
-## Getting Started
+# About the App
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/afrozshaikh25/ncovid19/blob/master/About01.png" alt="s1" width="200">
 
-A few resources to get you started if this is your first Flutter project:
+# Features
+## Live data of deaths, cases and recoveries
+## precautions page 
+## Country wise stats 
+## Accurate Daily Stats
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# nCovid-track
-A nCovid-19 Tracker app made with Flutter SDK and Dark
->>>>>>> 075f75bfc0369fcc739715ab0aaee5a98d6417b3
+<img src="https://github.com/afrozshaikh25/ncovid19/blob/master/sc01.png" alt="s1" width="200">
+
+# Api References
+https://corona.lmao.ninja
+
