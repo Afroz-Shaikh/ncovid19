@@ -27,6 +27,14 @@ This is a Flutter project developed to track the stats of the Novel Covid-19 vir
 flutter upgrade
 ```
 ```dart
+flutter get
+```
+5) if you encounter any issues then try flutter doctor
+```dart
+flutter doctor
+```
+6) Then finally run the app using flutter run
+```dart
 flutter run
 ```
 
