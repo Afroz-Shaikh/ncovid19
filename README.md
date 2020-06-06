@@ -45,7 +45,7 @@ https://corona.lmao.ninja
 # Licence
 <a href="https://github.com/afrozshaikh25/ncovid19/blob/master/LICENSE">Apache License 2.0</a>
 
-
+# Thank Note
 <b>STAY SAFE. STAY HOME</b>
 Star this Repo and show some ❤️ & Support
 ### Gracias Amigo
