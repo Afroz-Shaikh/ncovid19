@@ -47,5 +47,5 @@ https://corona.lmao.ninja
 
 # Thank Note
 <b>STAY SAFE. STAY HOME</b>
-Star this Repo and show some ❤️ & Support
+Star this Repo to show some ❤️ & Support
 ### Gracias Amigo
