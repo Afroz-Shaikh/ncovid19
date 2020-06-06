@@ -26,10 +26,12 @@ This is a Flutter project developed to track the stats of the Novel Covid-19 vir
   <li>Open Pubspec.yaml File and 
   ```dart
     Flutter upgrade
+    ```
   </li>
   <li>Then run 
   ```dart
     Flutter run
+    ```
   </li>
 </ul>
 
