@@ -19,21 +19,16 @@ This is a Flutter project developed to track the stats of the Novel Covid-19 vir
 
 # 💻Installation
 
-<ul>
-  <li>Download this repo</li>
-  <li>Extract the files onto your PC</li>
-  <li>Open this Folders using Android Studio or Visual Code</li>
-  <li>Open Pubspec.yaml File and 
-  ```dart
-    Flutter upgrade
-    ```
-  </li>
-  <li>Then run 
-  ```dart
-    Flutter run
-    ```
-  </li>
-</ul>
+1) Download this project(you can also use git to clone this rep)
+2) Extract the files onto your system
+3) Open the donloaded folder using Android Studio or Visual Code(having Flutter installed)
+4) Now navigate to pubspec.yaml in your editor and then Run flutter Upgrade and then Flutter get
+```dart
+flutter upgrade
+```
+```dart
+flutter run
+```
 
 # Api References
 https://corona.lmao.ninja
