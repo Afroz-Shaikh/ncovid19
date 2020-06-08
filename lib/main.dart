@@ -1,11 +1,10 @@
 import 'package:covidtrack/Screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 void main() {
 //  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
 //      .then((_) {
-
-  runApp(CovidApp(  ));
+  runApp(CovidApp());
 }
 //}
 
@@ -22,7 +21,6 @@ class _CovidAppState extends State<CovidApp> {
 //    ));
 //    FlutterStatusbarcolor.setStatusBarColor(Colors.white);
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
