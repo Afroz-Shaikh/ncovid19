@@ -9,6 +9,7 @@ import 'package:covidtrack/Screens/Dw1/Slider.dart';
 import 'package:covidtrack/Screens/Dw1/Slidedots.dart';
 //import 'package:flutter_onboarding_ui_concept/widgets/slide_items/slide_item.dart';
 import 'package:covidtrack/Screens/Dw1/Slideitem.dart';
+
 class SliderLayoutView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _SliderLayoutViewState();
@@ -46,66 +47,66 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
   Widget build(BuildContext context) => topSliderLayout();
 
   Widget topSliderLayout() => Container(
-    child: Padding(
-        padding: EdgeInsets.all(10.0),
-        child: Stack(
-          alignment: AlignmentDirectional.bottomCenter,
-          children: <Widget>[
-            PageView.builder(
-              scrollDirection: Axis.horizontal,
-              controller: _pageController,
-              onPageChanged: _onPageChanged,
-              itemCount: sliderArrayList.length,
-              itemBuilder: (ctx, i) => SlideItem(i),
-            ),
-            Stack(
-              alignment: AlignmentDirectional.topStart,
+        child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Stack(
+              alignment: AlignmentDirectional.bottomCenter,
               children: <Widget>[
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Padding(
-                    padding: EdgeInsets.only(right: 15.0, bottom: 15.0),
-                    child: Text(
-                      Constants.NEXT,
-                      style: TextStyle(
-                        fontFamily: Constants.OPEN_SANS,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14.0,
+                PageView.builder(
+                  scrollDirection: Axis.horizontal,
+                  controller: _pageController,
+                  onPageChanged: _onPageChanged,
+                  itemCount: sliderArrayList.length,
+                  itemBuilder: (ctx, i) => SlideItem(i),
+                ),
+                Stack(
+                  alignment: AlignmentDirectional.topStart,
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 15.0, bottom: 15.0),
+                        child: Text(
+                          Constants.NEXT,
+                          style: TextStyle(
+                            fontFamily: Constants.OPEN_SANS,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 14.0,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 15.0, bottom: 15.0),
-                    child: Text(
-                      Constants.SKIP,
-                      style: TextStyle(
-                        fontFamily: Constants.OPEN_SANS,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14.0,
+                    Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 15.0, bottom: 15.0),
+                        child: Text(
+                          Constants.SKIP,
+                          style: TextStyle(
+                            fontFamily: Constants.OPEN_SANS,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 14.0,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  alignment: AlignmentDirectional.bottomCenter,
-                  margin: EdgeInsets.only(bottom: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      for (int i = 0; i < sliderArrayList.length; i++)
-                        if (i == _currentPage)
-                          SlideDots(true)
-                        else
-                          SlideDots(false)
-                    ],
-                  ),
-                ),
+                    Container(
+                      alignment: AlignmentDirectional.bottomCenter,
+                      margin: EdgeInsets.only(bottom: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          for (int i = 0; i < sliderArrayList.length; i++)
+                            if (i == _currentPage)
+                              SlideDots(true)
+                            else
+                              SlideDots(false)
+                        ],
+                      ),
+                    ),
+                  ],
+                )
               ],
-            )
-          ],
-        )),
-  );
+            )),
+      );
 }

@@ -15,6 +15,8 @@ class _CarouselState extends State<Carousel> {
   }
 }
 
-Widget onBordingBody() => Container(
-  child: SliderLayoutView(),
-);
+Widget onBordingBody() {
+  return Container(
+    child: SliderLayoutView(),
+  );
+}

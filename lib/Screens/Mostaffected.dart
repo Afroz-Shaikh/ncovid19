@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:http/http.dart ';
-import 'package:http/http.dart' as http;
 
 class Mostaffectedpanel extends StatelessWidget {
-
-
   final List countryData;
 
   const Mostaffectedpanel({Key key, this.countryData}) : super(key: key);
@@ -37,7 +34,7 @@ class Mostaffectedpanel extends StatelessWidget {
                 Text(
                   'Deaths:' + countryData[index]['deaths'].toString(),
                   style:
-                  TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                      TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                 )
               ],
             ),

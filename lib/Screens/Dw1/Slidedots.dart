@@ -18,7 +18,7 @@ class SlideDots extends StatelessWidget {
             ? Border.all(
                 color: Color(0xff927DFF),
                 width: 2.0,
-              ),
+              )
             : Border.all(
                 color: Colors.transparent,
                 width: 1,

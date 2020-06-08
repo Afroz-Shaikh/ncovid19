@@ -1,15 +1,17 @@
 import 'package:flutter/cupertino.dart';
 //import 'package:flutter_onboarding_ui_concept/constants/constants.dart';
 import 'package:covidtrack/Screens/Dw1/Constants.dart';
+
 class Slider {
   final String sliderImageUrl;
   final String sliderHeading;
   final String sliderSubHeading;
 
-  Slider(
-      {@required this.sliderImageUrl,
-        @required this.sliderHeading,
-        @required this.sliderSubHeading});
+  Slider({
+    @required this.sliderImageUrl,
+    @required this.sliderHeading,
+    @required this.sliderSubHeading,
+  });
 }
 
 final sliderArrayList = [

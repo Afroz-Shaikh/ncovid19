@@ -1,10 +1,8 @@
-
 import 'package:flutter/cupertino.dart';
 //import 'package:flutter_onboarding_ui_concept/constants/constants.dart';
 import 'package:covidtrack/Screens/Dw1/Constants.dart';
 import 'package:covidtrack/Screens/Dw1/Slider.dart';
 //import 'package:flutter_onboarding_ui_concept/model/slider.dart';
-
 
 class SlideItem extends StatelessWidget {
   final int index;
@@ -20,8 +18,10 @@ class SlideItem extends StatelessWidget {
           height: MediaQuery.of(context).size.width * 0.6,
           width: MediaQuery.of(context).size.height * 0.4,
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(sliderArrayList[index].sliderImageUrl))),
+            image: DecorationImage(
+              image: AssetImage(sliderArrayList[index].sliderImageUrl),
+            ),
+          ),
         ),
         SizedBox(
           height: 60.0,
