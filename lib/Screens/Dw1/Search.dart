@@ -1,20 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:covidtrack/Screens/Datasource.dart';
 
-
-
-class Search extends SearchDelegate{
-
+class Search extends SearchDelegate {
   final List countryList;
 
   Search(this.countryList);
 
-
   @override
   ThemeData appBarTheme(BuildContext context) {
     return ThemeData(
-        primaryColor: Colors.red,
+      primaryColor: Colors.red,
 //        brightness: DynamicTheme.of(context).brightness
     );
   }
@@ -22,37 +17,45 @@ class Search extends SearchDelegate{
   @override
   List<Widget> buildActions(BuildContext context) {
     return [
-      IconButton(icon: Icon(Icons.clear), onPressed: (){
-        query='';
-
-      })
+      IconButton(
+          icon: Icon(Icons.clear),
+          onPressed: () {
+            query = '';
+          })
     ];
   }
 
   @override
   Widget buildLeading(BuildContext context) {
-    return IconButton(icon: Icon(Icons.arrow_back_ios),onPressed: (){
-      Navigator.pop(context);
-    },);
+    return IconButton(
+      icon: Icon(Icons.arrow_back_ios),
+      onPressed: () {
+        Navigator.pop(context);
+      },
+    );
   }
 
   @override
   Widget buildResults(BuildContext context) {
-    return Container(color: Colors.blue,);
+    return Container(
+      color: Colors.blue,
+    );
   }
 
   @override
-  Widget buildSuggestions(BuildContext context)
-  {
-    final suggestionList
-    =
-    query.isEmpty?
-    countryList:
-    countryList.where((element) => element['country'].toString().toLowerCase().startsWith(query)).toList();
+  Widget buildSuggestions(BuildContext context) {
+    final suggestionList = query.isEmpty
+        ? countryList
+        : countryList
+            .where((element) => element['country']
+                .toString()
+                .toLowerCase()
+                .startsWith(query.toLowerCase()))
+            .toList();
 
     return ListView.builder(
         itemCount: suggestionList.length,
-        itemBuilder: (context,index){
+        itemBuilder: (context, index) {
           return Card(
             color: Colors.black,
             child: Container(
@@ -71,7 +74,8 @@ class Search extends SearchDelegate{
                       children: <Widget>[
                         Text(
                           suggestionList[index]['country'],
-                          style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.white),
                         ),
                         Image.network(
                           suggestionList[index]['countryInfo']['flag'],
@@ -83,48 +87,44 @@ class Search extends SearchDelegate{
                   ),
                   Expanded(
                       child: Container(
-                        color: Colors.black,
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(8.0, 30.0, 8.0, 8.0),
-                          child: Column(
-                            children: <Widget>[
-                              Text(
-                                'CONFIRMED:' +
-                                    suggestionList[index]['cases'].toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red),
-                              ),
-                              Text(
-                                'ACTIVE:' +
-                                    suggestionList[index]['active'].toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red),
-                              ),
-                              Text(
-                                'RECOVERED:' +
-                                    suggestionList[index]['recovered'].toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.green),
-                              ),
-                              Text(
-                                'DEATHS:' +
-                                    suggestionList[index]['deaths'].toString(),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color:  Colors.red),
-                              ),
-                            ],
+                    color: Colors.black,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 30.0, 8.0, 8.0),
+                      child: Column(
+                        children: <Widget>[
+                          Text(
+                            'CONFIRMED:' +
+                                suggestionList[index]['cases'].toString(),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, color: Colors.red),
                           ),
-                        ),
-                      ))
+                          Text(
+                            'ACTIVE:' +
+                                suggestionList[index]['active'].toString(),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, color: Colors.red),
+                          ),
+                          Text(
+                            'RECOVERED:' +
+                                suggestionList[index]['recovered'].toString(),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green),
+                          ),
+                          Text(
+                            'DEATHS:' +
+                                suggestionList[index]['deaths'].toString(),
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, color: Colors.red),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ))
                 ],
               ),
             ),
           );
         });
   }
-
 }
