@@ -19,9 +19,9 @@ This is a Flutter project developed to track the stats of the Novel Covid-19 vir
 
 ## View Working version on web 📲
 
-### ⚠️ Warning : Web version is not stable and might not be able to relicate some features
-# https://afroz-shaikh.github.io/ncovid19/
-
+### ⚠️ Warning : Web version is not stable and might not be able to replicate some features,advised to test the apk version
+#   https://afroz-shaikh.github.io/ncovid19/
+# Download demo App: https://www.mediafire.com/file/mxqci3e955tjrfh/file
 
 # 💻Installation
 
