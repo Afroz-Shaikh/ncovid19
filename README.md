@@ -1,6 +1,6 @@
 # nCovid tracker
-
-<img alt="AppVeyor" src="https://img.shields.io/appveyor/build/Afroz-Shaikh/ncovid19">
+<a href="https://github.com/Afroz-Shaikh/ncovid19/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Afroz-Shaikh/ncovid19"></a>
+<a href="https://github.com/Afroz-Shaikh/ncovid19/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Afroz-Shaikh/ncovid19"></a>
 
 A Covid-19 Tracker that tracks the number of cases, deaths and recoveries by using a API. This app is built completely using Flutter Sdk and Dart.
 
